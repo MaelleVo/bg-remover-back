@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from rembg import remove
 from io import BytesIO
 
-# Charge les variables depuis .env
+
 load_dotenv()
 
 frontend_urls = os.getenv("FRONTEND_URLS")
@@ -24,6 +24,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
 
 @app.post("/remove-bg")
 async def remove_bg(file: UploadFile = File(...)):
