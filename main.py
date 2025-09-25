@@ -7,7 +7,7 @@ from rembg import remove
 from io import BytesIO
 
 
-load_dotenv()
+# load_dotenv()
 
 frontend_urls = os.getenv("FRONTEND_URLS")
 if not frontend_urls:
