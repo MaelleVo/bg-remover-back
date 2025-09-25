@@ -1,0 +1,19 @@
+# Environnements virtuels
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Fichiers de logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de configuration locaux
+.env
+
+# IDEs
+.vscode/
+.idea/
