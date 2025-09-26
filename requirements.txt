@@ -3,3 +3,6 @@ uvicorn[standard]
 rembg
 python-multipart
 onnxruntime
+python-dotenv
+pillow
+numpy
